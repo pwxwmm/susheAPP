@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>任务详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>主页</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+		<style>
+			body {
+				text-align: -webkit-auto;
+				max-height: 667px;
+				max-width: 375px;
+			}
+			
+			h5,
+			p,
+			ol,
+			li {
+				color: #666;
+				font-size: 14px;
+			}
+			h5 {
+				font-weight: bold;
+			}
+			p,
+			ol {
+				padding: 5px auto;
+				margin-bottom: 20px;
+			}
+			p,
+			li {
+				color: #999;
+			}
+			
+			.mui-title {
+				font-size: 20px;
+			}
+			
+
+			
+			.rw {
+				
+				border: #000000 1px solid;
+				margin-top: 60px;
+			}
+			
+			.rw1 {
+				
+				border: #000000 1px solid;
+				margin-top: 50px;
+			}
+			
+			.title {
+				background-color: royalblue;
+				
+				margin-top:42px;
+				padding: 0px;
+				display: flex;
+				display: -webkit-flex;
+				flex-direction: row;
+				text-align: center;
+				font-size: 30px;
+			}
+			.dcl{
+				padding-left: 50px;
+				text-align: center;
+			}
+			.ywc {
+				padding-left: 50px;
+				text-align: center;
+				color: #000000;
+			}
+			.datetime {
+				padding-left: 120px;
+			}
+			
+			.allrw {
+				margin-left: 50px;
+			}
+			#box {
+				border-left: #000000 solid 1px;
+				margin-left:15px ;
+			}
+			.mui-segmented-control {
+				padding-top: 45px;
+			}
+			.dcl::active .dcl{ background-color: white;}
+			
+			.ywc a:active .ywc { background-color: white;}
+		</style>
+	</head>
+	<body>
+
+		<div>
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="myPage.html"></a>
+				<h1 class="mui-title">已完成</h1>
+			</header>
+		</div>
+		<div id="segmentedControl" class="mui-segmented-control" >
+			<a class="mui-control-item mui-active" href="#item1">待处理</a>
+			<a class="mui-control-item" href="#item2">已处理</a>
+		</div>
+		<div class="allrw" style="margin:0 auto;width: 290px;">
+			<main class="rw" >
+				<ul>
+					<p>状态：已完成</p>
+					<span>维修人员：**</span><br><br>
+					<a href="detailsWorkPage.html">
+						<input type="submit" value="任务详情"></input><br>
+					</a>
+					<div class="datetime">
+						<p>2019-05-14 12:12:12</p>
+
+					</div>
+				</ul>
+			</main>
+		</div>
+		<div class="allrw" style="margin:0 auto;width: 290px;">
+			<main class="rw1">
+				<ul>
+					<p>状态：已完成</p>
+					<span>维修人员：**</span><br><br>
+					<a href="detailsWorkPage.html">
+						<input type="submit" id="rwxq" name="rwxq" value="任务详情" />
+					</a>
+					<div class="datetime">
+						<p>2019-05-14 12:12:12</p>
+					</div>
+				</ul>
+			</main>
+
+		</div>
+	</body>
+</html>

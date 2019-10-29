@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="feedback">
+
+	<head>
+		<meta charset="utf-8">
+		<title>任务详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/feedback.css" />
+	
+		<style>
+			body {
+				text-align: -webkit-auto;
+				max-height: 667px;
+				max-width: 375px;
+			}
+			
+			#address {
+				margin-top: 100px;
+			}
+			
+			#ssdw {
+				margin-top:20px ;
+				
+			}
+			
+			#bxxm {
+				margin-top:20px ;
+			}
+			
+			#wtms {
+				margin-top: 20px;
+			}
+			
+			.start {
+			
+				margin-left: 60px;
+			}
+			 .connection {
+				 margin-left: 150px;
+			 }
+			 
+			 #submit {
+				 font-size:22px;
+			 }
+
+		</style>
+	</head>
+
+	<body>
+		<script src="../js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<button id="submit" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right"></button>
+			<h1 class="mui-title">问题反馈</h1>
+		</header>
+		<div id="address" style="font-size: 16px;">
+			 &ensp;&ensp;门牌号：&nbsp;&nbsp;&nbsp;<input type="textarea" name="address" placeholder="请输入门牌号"/>
+		</div>
+		<div id="ssdw" style="font-size: 16px;">
+			&ensp;&ensp;所属单位：<input type="textarea" placeholder="请输入所属单位"/>
+		</div>
+		<div id="bxxm" style="font-size: 16px;">
+			&ensp;&ensp;报修项目：<input type="textarea" name="bxxm" placeholder="请输入报修项目"/>
+		</div>
+		<div id="wtms">
+			<input  style="width: 300px;margin-left: 10px;" type="text" name="question" id="question" placeholder="请详细描述你的问题……">
+		</div>
+		
+
+			<div class="mui-content-padded" style="margin-bottom: 20px;font-size: 16px;">
+				<div class="mui-inline">紧急程度</div>
+				<div class="icons mui-inline" style="margin-left: 6px;">
+					<i data-index="1" class="mui-icon mui-icon-star"></i>
+					<i data-index="2" class="mui-icon mui-icon-star"></i>
+					<i data-index="3" class="mui-icon mui-icon-star"></i>
+					<i data-index="4" class="mui-icon mui-icon-star"></i>
+					<i data-index="5" class="mui-icon mui-icon-star"></i>
+				</div>
+			</div>
+			<div>
+				<p >图片(选填,提供问题截图,总大小10M以下)</p>
+				<div id='image-list' class="row image-list" style="padding-left: 16px; padding-top: 16px; width: 100px;height: 100px;margin-left: 10px;"></div>
+			</div>
+			<div style="margin-top: 20px;">
+				<span class="oa-contact-name">
+					<input type="text" name="studentname" id="studentname" placeholder="姓名" style="font-size: 16px;width: 300px;margin-left: 10px;"/>
+				</span>
+			</div>
+			<div>
+				<span id="tel">
+					<input type="tel" name="telnumber" id="telnumber" placeholder="手机号" style="font-size: 16px;width: 300px;margin-left: 10px;"/>
+				</span>
+			</div>
+			<div>
+				<footer style="font-size: 16px;">
+					<a href="receiptPage.html">
+					<span class="start"><input type="submit" value="开始"></span>
+					</a>
+					<a href="transferPage.html">
+					<span class="connection" style="margin-left: 100px;"><input type="submit" value="转接"></span>
+					</a>
+				</footer>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src=" ../js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui('.mui-scroll-wrapper').scroll();
+		</script>
+
+	</body>
+
+</html>

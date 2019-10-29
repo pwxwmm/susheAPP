@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/style.css" rel="stylesheet" />
+		<style>
+			.area {
+				margin: 20px auto 0px auto;
+			}
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+			.mui-input-group label {
+				width: 22%;
+			}
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 78%;
+			}
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 6px;
+			}
+			.mui-content-padded {
+				margin-top: 25px;
+			}
+			.mui-btn {
+				padding: 10px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			
+			<a href="loginpage.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left">
+			</a>
+			<h1 class="mui-title">用户注册</h1>
+		</header>
+		<div class="mui-content">
+			
+			<form class="mui-input-group">
+				<div class="mui-input-row"style="font-size: 16px;">
+					<label>姓名</label>
+					<input id='account' type="text" class="mui-input-clear mui-input" placeholder="请输入姓名">
+				</div>
+				<div class="mui-input-row"style="font-size: 16px;">
+					<label>学号</label>
+					<input id='password' type="password" class="mui-input-clear mui-input" placeholder="请输入学号">
+				</div>
+				<div class="mui-input-row"style="font-size: 16px;">
+					<label style="width: 100px;">手机号</label>
+					<input id='password_confirm' type="password" class="mui-input-clear mui-input" style="margin-left: -100px;" placeholder="请确认手机号">
+					
+				</div>
+				<div class="mui-input-row">
+					<input id='password' type="password" class="mui-input-clear mui-input" placeholder="请输入验证码">
+				</div>
+				<button type="button" style="float: right;margin-top: -37px; margin-right: 15px;" >获取验证码</button>
+			</form>
+			<div class="mui-content">
+				<h5 class="mui-content-padded">用户身份选择</h5>
+				<div class="mui-card">
+					<form class="mui-input-group">
+						<div class="mui-input-row mui-radio mui-left">
+							<label style="width: 400px;font-size: 16px;">学生用户</label>
+							<input name="radio1" type="radio">
+						</div>
+						<div class="mui-input-row mui-radio mui-left">
+							<label style="width: 400px;font-size: 16px;">管理员用户</label>
+							<input name="radio1" type="radio" checked>
+						</div>
+					</form>
+				</div>
+			
+			
+			<div class="mui-content-padded">
+				<a href="loginpage.html">
+				<button id='reg' class="mui-btn mui-btn-block mui-btn-primary">确认注册</button>
+				</a>
+			</div>
+			
+		
+	</body>
+
+</html>

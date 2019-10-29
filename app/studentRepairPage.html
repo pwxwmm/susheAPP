@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="feedback">
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/feedback.css" />
+		<style>
+			.area {
+				margin: 20px auto 0px auto;
+			}
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+			.mui-input-group label {
+				width: 22%;
+			}
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 78%;
+			}
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 6px;
+			}
+			.mui-content-padded {
+				margin-top: 25px;
+			}
+			.mui-btn {
+				padding: 10px;
+			}	
+			h5 {
+				margin: 5px 7px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" >
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<button id="submit" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right"></button>
+			<h1 class="mui-title" style="font-size: 16px;">学生报修</h1>
+		</header>
+		<div class="mui-content" >
+			<div style="padding-top: 10px;">
+				<div id="address" style="font-size: 15px;">
+					 &nbsp;&nbsp;门牌号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textarea" name="address" placeholder="请输入门牌号" style="line-height: 40px;margin-left: 20px;"/>
+				</div>
+				<div id="ssdw" style="margin-bottom: 20px;margin-top: 20px;font-size: 15px;">
+					&nbsp;&nbsp;所属单位:&nbsp;&nbsp;<input type="textarea" placeholder="请输入所属单位" style="line-height: 40px;margin-left: 20px;"/>
+				</div>
+				<div id="bxxm" style="margin-top: 20px;font-size: 15px;">
+					&nbsp;&nbsp;报修项目:&nbsp;&nbsp;<input type="textarea" name="bxxm" placeholder="请输入报修项目" style="line-height: 40px;margin-left: 20px;"/>
+				</div>
+			</div>
+			
+			<div style="padding-top: 20px;">
+				<a style="float: left;line-height: 50px;color: #000000;font-size: 15px;">&nbsp;&nbsp;报修项目:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</a>
+				<select class="mui-btn mui-btn-block" style="margin-left: 0px;width: 180px;font-size: 16px;">
+					<option value="item-1">类型选择</option>
+					<option value="item-2">门、窗、锁</option>
+					<option value="item-3">灯、风扇、空调、电</option>
+					<option value="item-3">桌、椅、床、柜</option>
+				</select>
+			</div>
+			<div class="mui-content">
+				<div class="row mui-input-row" style="width: 300px;height: 130px;margin-left: 11px;">
+					<textarea id='question' class="mui-input-clear question" placeholder="问题描述"  ></textarea>
+				</div>
+				<p style="margin-left: 20px;">图片(选填,提供问题截图,总大小10M以下)</p>
+				<div id='image-list' class="row image-list" style="width: 300px;height: 100px;margin-left: 11px;"></div>
+				<div class="mui-content-padded">
+					<div class="mui-inline" style="margin-top: 5px;margin-left: 20px;">紧急程度</div>
+					<div class="icons mui-inline" style="margin-left: 6px;">
+						<i data-index="1" class="mui-icon mui-icon-star"></i>
+						<i data-index="2" class="mui-icon mui-icon-star"></i>
+						<i data-index="3" class="mui-icon mui-icon-star"></i>
+						<i data-index="4" class="mui-icon mui-icon-star"></i>
+						<i data-index="5" class="mui-icon mui-icon-star"></i>
+					</div>
+				</div>
+			</div>
+			<div id="ssdw" style="margin-bottom: 20px;margin-top: 20px; font-size: 16px;">
+				&nbsp;&nbsp;联系人:&nbsp;&nbsp;<input type="textarea" placeholder="请输入姓名" style="line-height: 40px;margin-left: 20px;"/>
+			</div>
+			<div id="ssdw" style="margin-bottom: 20px;margin-top: 20px; font-size: 16px;">
+				&nbsp;&nbsp;手机号:&nbsp;&nbsp;<input type="textarea" placeholder="请输入手机号" style="line-height: 40px;margin-left: 20px;"/>
+			</div
+			<div class="mui-content-padded" style="padding-top: 20px;" >
+				<a href="homePage.html">
+				<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined" style="width: 100px;margin-left: 50px;">
+					取消
+				</button>
+				</a>
+				<a href="receiptPage.html">
+				<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined" style="width: 100px;float: right;margin-right: 50px;">
+					提交
+				</button>
+				</a>
+			</div>
+			<script src="../js/mui.min.js"></script>
+			<script src=" ../js/feedback.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				mui.init();
+				mui('.mui-scroll-wrapper').scroll();
+			</script>
+	</body>
+
+</html>

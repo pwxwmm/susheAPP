@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/mui.min.css">
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="height: 15;">
+			<!-- <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a> -->
+			<h1 class="mui-title">首页</h1>
+		</header>
+<!-- 		<div class="mui-content" style="height: 5;margin-top: -14px;">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li id="switch" class="mui-table-view-cell">
+					<a herf="#" coords="blue">公告&ensp;&ensp;>></a>
+					<div class="mui-switch">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+			</ul>
+		</div> -->
+		<div id="slider" class="mui-slider" >
+			<div class="mui-slider-group mui-slider-loop" style="margin-top: 20px;">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../images/yuantiao.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/shuijiao.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/muwu.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/cbd.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/yuantiao.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../images/shuijiao.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		
+		
+		<div class="mui-content" style="margin-top: -60px;">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li id="switch" class="mui-table-view-cell">
+					<a herf="#" coords="blue">学生服务&ensp;&ensp;>></a>
+				</li>
+			</ul>
+		</div>
+		<div class="mui-content" style="margin-top: -60px;">
+		        <ul class="mui-table-view mui-grid-view mui-grid-9">
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="studentRepairPage.html">
+					        <span class="mui-icon mui-icon-gear"></span>
+					        <div class="mui-media-body">学生报修</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="myPage.html">
+		                    <span class="mui-icon mui-icon-home"></span>
+		                    <div class="mui-media-body">我的</div>
+							</a>
+					</li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="maintenanceLog .html">
+		                    <span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
+		                    <div class="mui-media-body">维修日志</div></a></li>
+		            
+		            <!-- <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		                    <span class="mui-icon mui-icon-location"></span>
+		                    <div class="mui-media-body">location</div></a></li> -->
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="detailsWorkPage.html">
+		                    <span class="mui-icon mui-icon-search"></span>
+		                    <div class="mui-media-body">工单详情</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		                    <span class="mui-icon mui-icon-phone"></span>
+		                    <div class="mui-media-body">紧急处理</div></a></li>
+		            
+		           <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="taskDetailsPage .html">
+		                    <span class="mui-icon mui-icon-more"></span>
+		                    <div class="mui-media-body">问题反馈</div></a></li>
+		        </ul> 
+		</div>
+		<div class="mui-content" style="padding: 0;">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li id="switch" class="mui-table-view-cell">
+				
+					<a href="myPage.html" coords="blue"><span class="mui-icon mui-icon-contact"></span>
+					&nbsp&nbsp&nbsp&nbsp&nbsp
+					我的</a>
+					<!-- <div class="mui-switch">
+						<div class="mui-switch-handle"></div>
+					</div> -->
+				</li>
+			</ul>
+		</div>
+		
+		
+		
+		<script src="../js/mui.min.js"></script>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			var slider = mui("#slider");
+			document.getElementById("switch").addEventListener('toggle', function(e) {
+				if (e.detail.isActive) {
+					slider.slider({
+						interval: 5000
+					});
+				} else {
+					slider.slider({
+						interval: 0
+					});
+				}
+			});
+		</script>
+		
+	</body>
+
+</html>

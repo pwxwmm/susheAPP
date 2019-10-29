@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/feedback.css" />
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css" />-->
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">待处理页面</h1>
+		</header>
+		<div class="mui-content">
+			<div style="padding: 10px 10px;">
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1">待处理</a>
+					<a class="mui-control-item" href="#item2">已处理</a>
+				</div>
+						<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						任务一<br />
+						紧急程度
+							<i data-index="1" class="mui-icon mui-icon-star"></i>
+							<i data-index="2" class="mui-icon mui-icon-star"></i>
+							<i data-index="3" class="mui-icon mui-icon-star"></i>
+							<i data-index="4" class="mui-icon mui-icon-star"></i>
+							<i data-index="5" class="mui-icon mui-icon-star"></i><br />
+						门牌号：*栋***<br />
+						<a href="detailsWorkPage.html">
+						<center><button href="#" type="button" class="mui-btn mui-btn-blue">查看详情</button></center>
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						任务二<br />
+						紧急程度
+							<i data-index="1" class="mui-icon mui-icon-star"></i>
+							<i data-index="2" class="mui-icon mui-icon-star"></i>
+							<i data-index="3" class="mui-icon mui-icon-star"></i>
+							<i data-index="4" class="mui-icon mui-icon-star"></i>
+							<i data-index="5" class="mui-icon mui-icon-star"></i><br />
+						门牌号：*栋***<br />
+						<a href="detailsWorkPage.html">
+						<center><button href="#" type="button" class="mui-btn mui-btn-blue">查看详情</button></center>
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						任务三<br />
+						紧急程度
+							<i data-index="1" class="mui-icon mui-icon-star"></i>
+							<i data-index="2" class="mui-icon mui-icon-star"></i>
+							<i data-index="3" class="mui-icon mui-icon-star"></i>
+							<i data-index="4" class="mui-icon mui-icon-star"></i>
+							<i data-index="5" class="mui-icon mui-icon-star"></i><br />
+						门牌号：*栋***<br />
+						<a href="detailsWorkPage.html">
+						<center><button href="#" type="button" class="mui-btn mui-btn-blue">查看详情</button></center>
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						任务四<br />
+						紧急程度
+							<i data-index="1" class="mui-icon mui-icon-star"></i>
+							<i data-index="2" class="mui-icon mui-icon-star"></i>
+							<i data-index="3" class="mui-icon mui-icon-star"></i>
+							<i data-index="4" class="mui-icon mui-icon-star"></i>
+							<i data-index="5" class="mui-icon mui-icon-star"></i><br />
+						门牌号：*栋***<br />
+						<a href="detailsWorkPage.html">
+						<center><button href="#" type="button" class="mui-btn mui-btn-blue">查看详情</button></center>
+						</a>
+					</li>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script src=" ../js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui('.mui-scroll-wrapper').scroll();
+		</script>
+	</body>
+
+</html>
